@@ -1,2 +1,4 @@
 body{ background-image: url(https://img5.goodfon.ru/wallpaper/nbig/d/10/fon-derevo-doski-vintage-wood-texture-blue-background-1.jpg);
-
+tr:nth-child(odd){ background-color: #F5B7B1; }
+tr:nth-child(even){ background-color: #A93226; }
+tr:hover{background-color:#85C1E9;}
