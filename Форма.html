@@ -3,16 +3,28 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Форма</title>
+	<script>
+function Hello( {
+x=document.Форма.Користувач.value;
+y=document.Форма.Прізвище.value;
+z=document.Форма.Пошта.value;
+	Дата=document.Форма.date.)
+
+alert("Вітаємо""+x+" "+y". \nВи зареєстровані на сайті Професії майбутнього з такими даними:\nВаша пошта -  "+z+".\nДата нарожження - "+Дата) }
+</script>
 </head>
 <body>
 <form name="Форма"> 
-<fieldset><legend>Заповнити обов'язково</legend>
+<fieldset ><legend>Заповнити обов'язково</legend>
+
 <p>Заповніть реєстраційну форму</p>
-<p>Дата заповнення форми:<input type="date"></p>
+<p>Дата народження:<input type="date"></p>
 <p>Ім'я: <input name="Користувач" required  placeholder="Уведіть ім'я"></p>
 <p> Прізвище: <input name="Прізвище" required placeholder="Уведіть прізвище"></p>
 <p>Пароль:<input type="password"  name="Пароль" required placeholder="Уведіть пароль"></p>
 <p> E-mail: <input type="email" name="Пошта" required  placeholder="Уведіть електронну адресу"> </p>
+ <input type="button" value="Привітатися" onclick="hello()">
+
 </fieldset>
 <fieldset> <legend>Заповнити за бажанням</legend><p>Вам подобаэться робота сайту?: </p>
 <input type="radio" name="radio">Так</p>
