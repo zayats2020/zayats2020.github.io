@@ -4,42 +4,39 @@
 	<meta charset="UTF-8">
 	<title>Форма</title>
 	<script>
-function Hello( {
-x=document.Форма.Користувач.value;
-y=document.Форма.Прізвище.value;
-z=document.Форма.Пошта.value;
-	Дата=document.Форма.date.)
-
-alert("Вітаємо""+x+" "+y". \nВи зареєстровані на сайті Професії майбутнього з такими даними:\nВаша пошта -  "+z+".\nДата нарожження - "+Дата) }
+function Hello()
+ {
+x=document.Forma.Korist.value;
+y=document.Forma.Priz.value;
+z=document.Forma.Posta.value;
+k=document.Forma.ggg.value;
+alert("Вітаємо" +x+ " " +y ". \n Ви зареєстровані на сайті Професії майбутнього з такими даними:\n Ваша пошта - "  +z+ ".\n Дата народження- "+k);
+ }
 </script>
 </head>
+
 <body>
-<form name="Форма"> 
+<form name="Forma"> 
 <fieldset ><legend>Заповнити обов'язково</legend>
-
-<p>Заповніть реєстраційну форму</p>
-<p>Дата народження:<input type="date"></p>
-<p>Ім'я: <input name="Користувач" required  placeholder="Уведіть ім'я"></p>
-<p> Прізвище: <input name="Прізвище" required placeholder="Уведіть прізвище"></p>
-<p>Пароль:<input type="password"  name="Пароль" required placeholder="Уведіть пароль"></p>
-<p> E-mail: <input type="email" name="Пошта" required  placeholder="Уведіть електронну адресу"> </p>
- <input type="button" value="Привітатися" onclick="hello()">
-
+<p>Заповніть реєстраційну форму
+<p>Дата народження:<input type="date" name="ggg" >
+<p>Ім'я: <input name="Korist" required  placeholder="Уведіть ім'я">
+<p> Прізвище: <input name="Priz" required placeholder="Уведіть прізвище">
+<p>Пароль:<input type="password"  name="Parol" required placeholder="Уведіть пароль">
+<p> E-mail: <input type="email" name="Posta" required  placeholder="Уведіть електронну адресу">
+<p>  <input type="button" name="Kn" value="Привітатися" onclick="Hello()">
 </fieldset>
-<fieldset> <legend>Заповнити за бажанням</legend><p>Вам подобаэться робота сайту?: </p>
-<input type="radio" name="radio">Так</p>
- <input type="radio" name="radio">Ні</p>
- <input type="radio" name="radio">50/50</p>
+<fieldset> <legend>Заповнити за бажанням</legend>
+	<p>Вам подобаэться робота сайту?: 
+<input type="radio" name="radio">Так
+ <input type="radio" name="radio">Ні
+ <input type="radio" name="radio">50/50
 <p> Інтереси: </p>
-<p> <input type="checkbox" name="checkbox"> Читання</p>
-<p> <input type="checkbox" name="checkbox"> Малювання</p>
-<p> <input type="checkbox" name="checkbox"> Музика</p>
+<p> <input type="checkbox" name="checkbox"> Читання
+<p> <input type="checkbox" name="checkbox"> Малювання
+<p> <input type="checkbox" name="checkbox"> Музика
 </fieldset>
-
 <button>Надіслати</button>  <input type="reset" name="Knopka" value="Очистити форму">
-
-
-
 </form>	
 </body>
 </html>
